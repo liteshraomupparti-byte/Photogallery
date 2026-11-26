@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <span class="logo-icon">📸</span>
+        <h1>Photo<span>Gallery</span></h1>
+      </div>
+      <p class="tagline">Explore stunning moments captured through the lens</p>
+    </div>
+  </header>
+
+  <!-- Filter Buttons -->
+  <main class="container">
+    <div class="filter-wrapper">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="nature">Nature</button>
+      <button class="filter-btn" data-filter="architecture">Architecture</button>
+      <button class="filter-btn" data-filter="travel">Travel</button>
+      <button class="filter-btn" data-filter="wildlife">Wildlife</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-grid" id="galleryGrid">
+      
+      <!-- Card 1 -->
+      <div class="gallery-item" data-category="nature">
+        <div class="image-box">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Majestic Mountain Lake" loading="lazy">
+          <div class="overlay">
+            <span class="category-badge">Nature</span>
+            <h3>Alpine Serenity</h3>
+            <p>Peaceful reflection over turquoise mountain waters.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="gallery-item" data-category="architecture">
+        <div class="image-box">
+          <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Modern Minimalist Interior" loading="lazy">
+          <div class="overlay">
+            <span class="category-badge">Architecture</span>
+            <h3>Geometric Lines</h3>
+            <p>Contemporary structural elegance and ambient light.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="gallery-item" data-category="travel">
+        <div class="image-box">
+          <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80" alt="Travelers Journey" loading="lazy">
+          <div class="overlay">
+            <span class="category-badge">Travel</span>
+            <h3>Wanderlust Horizons</h3>
+            <p>Charting unpaved roads across distant valleys.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="gallery-item" data-category="wildlife">
+        <div class="image-box">
+          <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=800&q=80" alt="Majestic Lion" loading="lazy">
+          <div class="overlay">
+            <span class="category-badge">Wildlife</span>
+            <h3>Golden Monarch</h3>
+            <p>Raw beauty and untamed power of the savannah.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="gallery-item" data-category="nature">
+        <div class="image-box">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80" alt="Misty Forest" loading="lazy">
+          <div class="overlay">
+            <span class="category-badge">Nature</span>
+            <h3>Emerald Canopy</h3>
+            <p>Sunlight piercing through ancient morning pine mist.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="gallery-item" data-category="architecture">
+        <div class="image-box">
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Skyscrapers Reaching Sky" loading="lazy">
+          <div class="overlay">
+            <span class="category-badge">Architecture</span>
+            <h3>Metropolitan Rise</h3>
+            <p>Glass towers reflecting the endless blue canopy.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="gallery-item" data-category="travel">
+        <div class="image-box">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Tropical Coastline" loading="lazy">
+          <div class="overlay">
+            <span class="category-badge">Travel</span>
+            <h3>Azure Shores</h3>
+            <p>Warm ocean tides kissing untouched sandy bays.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="gallery-item" data-category="wildlife">
+        <div class="image-box">
+          <img src="https://images.unsplash.com/photo-1474511320723-9a56873ee67b?auto=format&fit=crop&w=800&q=80" alt="Curious Red Fox" loading="lazy">
+          <div class="overlay">
+            <span class="category-badge">Wildlife</span>
+            <h3>Silent Prowler</h3>
+            <p>Keen senses alert in the crisp winter meadow.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="gallery-item" data-category="nature">
+        <div class="image-box">
+          <img src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=800&q=80" alt="Sunlight Through Leaves" loading="lazy">
+          <div class="overlay">
+            <span class="category-badge">Nature</span>
+            <h3>Golden Hour Bloom</h3>
+            <p>Gentle rays illuminating vibrant summer leaves.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div class="modal" id="imageModal">
+    <span class="modal-close" id="modalClose">&times;</span>
+    <img class="modal-content" id="modalImg" alt="Enlarged view">
+    <div class="modal-caption" id="modalCaption"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 PhotoGallery. Built with HTML, CSS & Hosted on GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <!-- Interactive JavaScript for filtering & modal -->
+  <script>
+    // Filter functionality
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+
+        galleryItems.forEach(item => {
+          const category = item.getAttribute('data-category');
+          if (filter === 'all' || category === filter) {
+            item.style.display = 'block';
+            setTimeout(() => {
+              item.style.opacity = '1';
+              item.style.transform = 'scale(1)';
+            }, 50);
+          } else {
+            item.style.opacity = '0';
+            item.style.transform = 'scale(0.9)';
+            setTimeout(() => {
+              item.style.display = 'none';
+            }, 300);
+          }
+        });
+      });
+    });
+
+    // Lightbox modal functionality
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImg');
+    const modalCaption = document.getElementById('modalCaption');
+    const modalClose = document.getElementById('modalClose');
+
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const img = item.querySelector('img');
+        const title = item.querySelector('h3').innerText;
+        const desc = item.querySelector('p').innerText;
+
+        modal.style.display = 'flex';
+        modalImg.src = img.src;
+        modalCaption.innerHTML = `<strong>${title}</strong> — ${desc}`;
+      });
+    });
+
+    modalClose.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.style.display === 'flex') {
+        modal.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
